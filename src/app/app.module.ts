@@ -17,6 +17,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ExportexcelComponent } from './export-excel/export-excel.component';
 
 
 
@@ -27,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     TEISComponent,
     ImportTeisComponent,
+    ExportexcelComponent,
+
 
   ],
   imports: [

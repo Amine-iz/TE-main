@@ -1,6 +1,6 @@
 button.my-button{
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0 30px;
   width: 300px;
   background-color: #ea8400;
   color: white;
@@ -11,3 +11,7 @@ button.my-button{
 button.my-button:hover{
   background-color: #c98327;
 }
+
+
+
+
