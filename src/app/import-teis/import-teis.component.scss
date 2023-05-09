@@ -1,0 +1,29 @@
+.custom-file-input {
+  display: none;
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  background-color: #ea8400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-file-input:hover {
+  background-color: #b8813b;
+}
+
+.custom-file-input:active {
+  background-color: #ea8400;
+}
+
+mat-form-field{
+  width: 90%;
+  margin: 10px;
+}
+div.div-mat{
+  display: flex;
+  justify-content: space-between;
+}

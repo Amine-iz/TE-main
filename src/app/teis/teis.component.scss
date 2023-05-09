@@ -1,0 +1,13 @@
+button.my-button{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  background-color: #ea8400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+button.my-button:hover{
+  background-color: #c98327;
+}
