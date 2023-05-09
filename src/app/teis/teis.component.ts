@@ -45,7 +45,7 @@ export class TEISComponent implements OnInit {
     teisInvoices: teisInvoices[] = [];
     ///Connect to DB Data
     constructor(public dialog: MatDialog,private http: HttpClient) { }
-    
+
 
     ngOnInit(): void {
       // make HTTP request to server to retrieve data
@@ -55,7 +55,7 @@ export class TEISComponent implements OnInit {
           // format data as array of objects
           this.teisInvoices = data;
           console.log(data);
-  
+
       })
       )}
 
@@ -73,6 +73,8 @@ export class TEISComponent implements OnInit {
       this.data = result
       console.log(this.data);
       this.dataSource = new MatTableDataSource(this.data);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     });;
   }
 
@@ -98,7 +100,7 @@ export class TEISComponent implements OnInit {
     const wb: XLSX.WorkBook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
 
-    /* save to file */  
+    /* save to file */
     XLSX.writeFile(wb, this.fileName);
 
   }
